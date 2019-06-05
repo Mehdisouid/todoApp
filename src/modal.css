@@ -1,0 +1,55 @@
+.wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: .6;
+    text-align: center;
+
+}
+
+.modal {
+    background-color: aliceblue;
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+     transition: all 2s;
+
+}
+
+.modal-header {
+    height: 50px;
+
+}
+
+.modal-header button {
+    float: right;
+}
+
+.header-txt {
+    float: left;
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+
+}
+
+.add_btn {
+    float: left;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 25px;
+}
+
+.cancel_btn {
+    float: right;
+    background-color: crimson;
+    color: white;
+    font-size: 25px;
+
+}
