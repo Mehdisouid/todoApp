@@ -19,8 +19,12 @@ soon be implemented :
 ui design 
 create back end for save and control our data
 <p >
-  <img src="./public/Capture1.PNG" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="./public/Capture1.PNG" width="350"  >
+  <img src="./public/Captur2.PNG" width="350"  >
+   <img src="./public/Caure.PNG" width="350"  >
+   <img src="./public/Cure.PNG" width="350" >
+
+
 </p>
 
  
