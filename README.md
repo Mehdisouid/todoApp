@@ -15,7 +15,8 @@ search todo
 add to do
 edit to do
 soon be implemented :
- start chrono for each todo 
+add promodro technical 
+
 ui design 
 create back end for save and control our data
 <p >
