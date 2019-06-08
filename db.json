@@ -1,19 +1,20 @@
 {
   "todolist": [
     {
-      "name": "coding",
-      "duration": "3",
+      "name": "count",
+      "duration": {
+        "hour": "0",
+        "minute": "0"
+      },
       "id": 1
     },
     {
-      "name": "lifting",
-      "duration": "2",
+      "name": "sleep",
+      "duration": {
+        "hour": "1",
+        "minute": "1"
+      },
       "id": 2
-    },
-    {
-      "name": "hard work ",
-      "duration": "3",
-      "id": 3
     }
   ]
 }

@@ -12,7 +12,10 @@ class Navbar extends Component {
         this.state = {
             openModal: false,
             name: '',
-            duration: 0
+            duration: {
+                minute: 0,
+                hour: 0
+            }
         }
     }
 
@@ -23,9 +26,14 @@ class Navbar extends Component {
     handleTextChange = (e) => {
         this.setState({[e.target.name]: e.target.value});
     }
+    handleDurationChange = (e) => {
+        this.setState({duration: {...this.state.duration,[e.target.name]: e.target.value}});
+    }
+
 
     render() {
-        const {openModal, name, duration} = this.state
+        const {openModal, name, duration:{hour , minute}} = this.state
+
         const {addtodo} = this.props
         const add_form = <form>
             <div className={"input-item"}>
@@ -34,8 +42,14 @@ class Navbar extends Component {
             </div>
             <div className={"input-item"}>
                 <label> enter duration</label>
-                <input value={duration} name={'duration'} className={"input"} type={'number'}
-                       onChange={this.handleTextChange}/>
+                <p>Hours </p>
+                <input  value={ hour} name={'hour'} className={"input"} type={'number'}
+                       onChange={this.handleDurationChange}/>
+
+                <p>minutes</p>
+                <input   value={minute} name={'minute'} className={"input"} type={'number'}
+                       onChange={this.handleDurationChange}/>
+
             </div>
 
         </form>
@@ -47,8 +61,8 @@ class Navbar extends Component {
                     {openModal && <div className="wrapper" onClick={() => this.handleModal(false)}/>}
 
                     <li><a onClick={() => this.handleModal(true)}>Add</a></li>
-                   <Modal openModal={openModal} addtodo={() => addtodo({name, duration})}
-                                         close={() => this.handleModal(false)}>{add_form}</Modal>
+                    <Modal openModal={openModal} addtodo={() => addtodo({name, duration :{hour , minute} })}
+                           close={() => this.handleModal(false)}>{add_form}</Modal>
                 </ul>
 
 
