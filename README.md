@@ -1,5 +1,5 @@
 **hello  this is my first from scratch project** 
-
+the idea is to learn at mush at possible the react js
 
 **every day a challenge is begin**
 challenge 0
