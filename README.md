@@ -14,11 +14,9 @@ delete todo
 search todo
 add to do
 edit to do
-soon be implemented :
-add promodro technical 
+   promodro technical 
 
-ui design 
-create back end for save and control our data
+ 
 <p >
   <img src="./public/Capture1.PNG" width="350"  >
   <img src="./public/Captur2.PNG" width="350"  >
